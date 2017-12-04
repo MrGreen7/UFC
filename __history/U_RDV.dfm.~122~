@@ -1,0 +1,257 @@
+object F_RDV: TF_RDV
+  Left = 0
+  Top = 0
+  Caption = 'pa'
+  ClientHeight = 620
+  ClientWidth = 1042
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Candara'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 15
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 1042
+    Height = 620
+    ActivePage = TabSheet1
+    Align = alClient
+    TabOrder = 0
+    TabStop = False
+    TabWidth = 120
+    ExplicitWidth = 1016
+    object TabSheet1: TTabSheet
+      Caption = 'Patients'
+      ExplicitWidth = 1008
+      object Splitter1: TSplitter
+        Left = 688
+        Top = 0
+        Width = 10
+        Height = 328
+        Align = alRight
+        ExplicitLeft = 657
+      end
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 688
+        Height = 328
+        Align = alClient
+        TabOrder = 0
+        ExplicitWidth = 662
+        object Edit1: TEdit
+          Left = 34
+          Top = 119
+          Width = 200
+          Height = 23
+          TabOrder = 1
+          TextHint = 'Nom'
+        end
+        object Edit2: TEdit
+          Left = 446
+          Top = 127
+          Width = 200
+          Height = 23
+          TabOrder = 2
+          TextHint = 'Pr'#233'nom'
+        end
+        object Edit3: TEdit
+          Left = 34
+          Top = 152
+          Width = 200
+          Height = 23
+          TabOrder = 3
+          TextHint = 'N'#176' de Carte d'#39'identiti'#233
+        end
+        object DateTimePicker1: TDateTimePicker
+          Left = 446
+          Top = 156
+          Width = 200
+          Height = 23
+          Date = 2.457057222221920000
+          Time = 2.457057222221920000
+          DateFormat = dfLong
+          DateMode = dmUpDown
+          MinDate = 2.000000000000000000
+          TabOrder = 4
+        end
+        object RadioGroup1: TRadioGroup
+          Left = 34
+          Top = 185
+          Width = 200
+          Height = 64
+          Caption = 'Gender'
+          Items.Strings = (
+            'Homme'
+            'Femme')
+          TabOrder = 5
+        end
+        object DateTimePicker2: TDateTimePicker
+          Left = 34
+          Top = 255
+          Width = 200
+          Height = 23
+          Date = 43069.457057222220000000
+          Time = 43069.457057222220000000
+          DateFormat = dfLong
+          DateMode = dmUpDown
+          MinDate = 29221.000000000000000000
+          TabOrder = 8
+        end
+        object ComboBox1: TComboBox
+          Left = 446
+          Top = 251
+          Width = 200
+          Height = 23
+          TabOrder = 9
+          TextHint = 'Type'
+          Items.Strings = (
+            'Interne'
+            'Extrene')
+        end
+        object Edit4: TEdit
+          Left = 446
+          Top = 185
+          Width = 200
+          Height = 23
+          TabOrder = 6
+          TextHint = 'Adresse'
+        end
+        object Edit5: TEdit
+          Left = 446
+          Top = 218
+          Width = 200
+          Height = 23
+          TabOrder = 7
+          TextHint = 'T'#233'lephone'
+        end
+        object Button1: TButton
+          Left = 34
+          Top = 16
+          Width = 200
+          Height = 73
+          Caption = 'Nouveau'
+          TabOrder = 0
+          OnClick = Button1Click
+        end
+        object Button2: TButton
+          Left = 240
+          Top = 16
+          Width = 200
+          Height = 73
+          Caption = 'Sauvgarder'
+          TabOrder = 10
+          OnClick = Button2Click
+        end
+        object Button3: TButton
+          Left = 446
+          Top = 16
+          Width = 200
+          Height = 73
+          Caption = 'Annuler'
+          TabOrder = 11
+          OnClick = Button3Click
+        end
+      end
+      object Panel2: TPanel
+        Left = 0
+        Top = 328
+        Width = 1034
+        Height = 262
+        Align = alBottom
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        TabOrder = 1
+        ExplicitWidth = 1008
+        object DBNavigator1: TDBNavigator
+          Left = 1
+          Top = 1
+          Width = 1032
+          Height = 25
+          DataSource = DataModule1.DataSource1
+          Align = alTop
+          TabOrder = 1
+          ExplicitWidth = 1006
+        end
+        object DBGrid1: TDBGrid
+          Left = 1
+          Top = 49
+          Width = 1032
+          Height = 212
+          TabStop = False
+          Align = alClient
+          DataSource = DataModule1.DataSource1
+          TabOrder = 2
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -13
+          TitleFont.Name = 'Candara'
+          TitleFont.Style = []
+        end
+        object Edit6: TEdit
+          Left = 1
+          Top = 26
+          Width = 1032
+          Height = 23
+          Align = alTop
+          TabOrder = 0
+          TextHint = 'Search'
+          ExplicitWidth = 1006
+        end
+      end
+      object Panel3: TPanel
+        Left = 698
+        Top = 0
+        Width = 336
+        Height = 328
+        Align = alRight
+        TabOrder = 2
+        ExplicitLeft = 672
+        object Image1: TImage
+          Left = 1
+          Top = 1
+          Width = 334
+          Height = 230
+          Align = alClient
+          ExplicitLeft = 233
+          ExplicitTop = 162
+          ExplicitWidth = 569
+          ExplicitHeight = 181
+        end
+        object Button5: TButton
+          Left = 1
+          Top = 279
+          Width = 334
+          Height = 48
+          Align = alBottom
+          Anchors = []
+          Caption = 'Sauvgarder'
+          TabOrder = 1
+        end
+        object Button4: TButton
+          Left = 1
+          Top = 231
+          Width = 334
+          Height = 48
+          Align = alBottom
+          Anchors = []
+          Caption = 'Ouvrir'
+          TabOrder = 0
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Rendez Vous'
+      ImageIndex = 1
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Consultation'
+      ImageIndex = 2
+    end
+  end
+end

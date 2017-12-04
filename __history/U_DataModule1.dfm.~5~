@@ -1,0 +1,22 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 109
+  Width = 439
+  object FDConnection1: TFDConnection
+    Left = 151
+    Top = 38
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'Select * from Rendez_Vous')
+    Left = 199
+    Top = 38
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 255
+    Top = 38
+  end
+end
