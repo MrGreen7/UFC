@@ -1,0 +1,74 @@
+object Sign: TSign
+  Left = 0
+  Top = 0
+  Caption = 'Sign'
+  ClientHeight = 359
+  ClientWidth = 584
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -17
+  Font.Name = 'Candara'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 21
+  object Edit1: TEdit
+    Left = 56
+    Top = 39
+    Width = 473
+    Height = 29
+    TabOrder = 0
+    TextHint = 'Nom Complete'
+  end
+  object Edit2: TEdit
+    Left = 56
+    Top = 87
+    Width = 473
+    Height = 29
+    TabOrder = 1
+    TextHint = 'Pseudo'
+  end
+  object Edit3: TEdit
+    Left = 56
+    Top = 135
+    Width = 473
+    Height = 29
+    TabOrder = 2
+    TextHint = 'Mot de Pass'
+  end
+  object Edit4: TEdit
+    Left = 56
+    Top = 183
+    Width = 473
+    Height = 29
+    TabOrder = 3
+    TextHint = 'Mot de Pass'
+  end
+  object Button1: TButton
+    Left = 56
+    Top = 279
+    Width = 113
+    Height = 41
+    Caption = 'Valid'#233
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 235
+    Top = 279
+    Width = 113
+    Height = 41
+    Caption = 'Vid'#233
+    TabOrder = 5
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 416
+    Top = 279
+    Width = 113
+    Height = 41
+    Caption = 'Anuller'
+    TabOrder = 6
+    OnClick = Button3Click
+  end
+end

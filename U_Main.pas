@@ -27,7 +27,6 @@ var
   F_Main: TF_Main;
 
 implementation
-
 {$R *.dfm}
 
 procedure TF_Main.Button1Click(Sender: TObject);
@@ -39,11 +38,9 @@ procedure TF_Main.Button2Click(Sender: TObject);
 var
   Button :Integer;
 begin
-  Button:=MessageDlg('Vous pouvez sotier le Programm', mtConfirmation, [mbYes,mbNo],0);
+  Button:=MessageDlg('Vous pouvez sortié le Programme', mtConfirmation, [mbYes,mbNo],0);
   if (Button = mrYes) then
     halt(0);
-
-
 end;
 
 procedure TF_Main.Button4Click(Sender: TObject);

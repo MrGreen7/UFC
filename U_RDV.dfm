@@ -237,24 +237,18 @@ object F_RDV: TF_RDV
           Anchors = []
           Caption = 'Ouvrir'
           TabOrder = 0
+          ExplicitLeft = -4
+          ExplicitTop = 225
         end
       end
     end
     object TabSheet2: TTabSheet
       Caption = 'Rendez Vous'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
     end
     object TabSheet3: TTabSheet
       Caption = 'Consultation'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
     end
   end
 end

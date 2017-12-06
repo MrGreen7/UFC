@@ -17,6 +17,9 @@ type
     DataSource1: TDataSource;
     FDQuery2: TFDQuery;
     DataSource2: TDataSource;
+    FDCommand1: TFDCommand;
+    FDConnection2: TFDConnection;
+    FDQuery3: TFDQuery;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -34,14 +37,17 @@ implementation
 
 procedure TDataModule1.DataModuleCreate(Sender: TObject);
 var
-  Path: String;
+  Path1, Path2: String;
 begin
 //Obtenir le répartoire actuel de Base de donneé
-  Path := ExpandFileName(GetCurrentDir() + '\..\Resources\DataBase.db');
+  Path1 := ExpandFileName(GetCurrentDir() + '\..\Resources\DataBase.db');
+  Path2 := ExpandFileName(GetCurrentDir() + '\..\Resources\Data.db');
 //Définier la Répartoire de base de donneé
-  FDConnection1.Params.Add('Database=' + Path);
+  FDConnection1.Params.Add('Database=' + Path1);
+  FDConnection2.Params.Add('Database=' + Path2);
 //Activé le component de FireDac
   FDConnection1.Connected := True;
+  FDConnection2.Connected := True;
   FDQuery1.Active := True;
   FDQuery2.Active := True;
 end;

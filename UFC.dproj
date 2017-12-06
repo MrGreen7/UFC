@@ -152,6 +152,14 @@
             <Form>F_RDV</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="U_Log.pas">
+            <Form>Log</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="U_Sign.pas">
+            <Form>Sign</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <None Include="ModelSupport_UFC\default.txaPackage"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
